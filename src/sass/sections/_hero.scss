@@ -49,7 +49,30 @@
       font-size: 2.8rem;
     }
   }
-
+  .container{
+    padding-left: 0;
+    .social-links{
+      justify-content: flex-start;
+      @include respond(tab-port){
+        justify-content: center;
+      }
+      a:first-of-type{
+        margin-left: 0;
+        @include respond(tab-port){
+          margin-left: 16px;
+        }
+      }
+      a{
+        color: #00cdac;
+        color: #fff;
+        background-color: #272341;
+        i{
+          color: #00cdac;
+          color: #fff;
+        }
+      }
+    }
+  }
   .hero-cta {
     display: flex;
 
